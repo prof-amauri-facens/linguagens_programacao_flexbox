@@ -1,9 +1,13 @@
-.box {
+.container {
     display: flex;
+    flex-wrap: nowrap; /* Impede a quebra de linhas */
+    /* flex-wrap: wrap;  Permite a quebra de linhas */
+    /* flex-wrap: wrap-reverse; Inverte a ordem das linhas */
 }
 
-.box div {
-    border: 1px solid black;
-    background-color: aquamarine;
-  }
-  
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+}

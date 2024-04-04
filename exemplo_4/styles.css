@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: lightblue;
+}
+
+/* Estilo exclusivo para o exemplo usando flex-flow */
+.flex-flow-example {
+    flex-flow: column wrap;
+}
