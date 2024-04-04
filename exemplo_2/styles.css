@@ -1,0 +1,9 @@
+.box {
+    display: flex;
+}
+
+.box div {
+    border: 1px solid black;
+    background-color: aquamarine;
+  }
+  
