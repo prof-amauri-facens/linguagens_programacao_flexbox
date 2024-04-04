@@ -1,0 +1,21 @@
+/* Exemplo de grow */
+.container {
+    display: flex;
+    border: 1px solid #333;
+    gap: 10px; /* Define o espaçamento entre os itens */
+    padding: 10px; /* Adiciona um espaçamento interno */
+}
+
+.item {
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+}
+
+.grow1 {
+    flex-grow: 1; /* Faz com que o item cresça em relação aos outros */
+}
+
+.grow2 {
+    flex-grow: 2; /* Faz com que o item cresça duas vezes mais rápido em relação aos outros */
+}

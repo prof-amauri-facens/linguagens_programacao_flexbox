@@ -1,0 +1,60 @@
+/* Exemplo align self */
+.container {
+    display: flex;
+    height: 300px;
+    border: 1px solid #333;
+    align-items: center;
+}
+
+.item {
+    /* A propriedade flex é uma propriedade abreviada que combina três propriedades individuais relacionadas ao 
+    modelo de layout flexível em CSS:
+
+    flex-grow: Define a capacidade de um item flexível crescer se houver espaço disponível. É um número sem 
+    unidade que representa a proporção de espaço que o item deve ocupar em relação aos outros itens flexíveis no 
+    mesmo contêiner. Se todos os itens tiverem flex-grow: 1, eles crescerão igualmente para preencher o espaço disponível. 
+    Neste caso, flex-grow: 0 significa que o item não deve crescer.
+
+    flex-shrink: Define a capacidade de um item flexível encolher se houver pouco espaço disponível. É um número sem 
+    unidade que representa a proporção de espaço que o item pode encolher em relação aos outros itens flexíveis no mesmo 
+    contêiner. Se todos os itens tiverem flex-shrink: 1, eles encolherão igualmente para se ajustar ao espaço disponível. 
+    Neste caso, flex-shrink: 0 significa que o item não deve encolher.
+
+    flex-basis: Define o tamanho inicial do item antes de qualquer espaço adicional ser distribuído. Pode ser um valor em 
+    pixels, porcentagem ou outra unidade CSS. Neste caso, flex-basis: 100px define o tamanho inicial do item como 100 pixels.
+
+    Portanto, flex: 0 0 100px; significa que o item não deve crescer (flex-grow: 0), não deve encolher (flex-shrink: 0), 
+    e deve ter um tamanho inicial de 100 pixels (flex-basis: 100px). Isso significa que o item terá um tamanho fixo de 100 
+    pixels e não mudará de tamanho com base no espaço disponível. */
+    
+    flex: 0 0 100px;
+    margin: 10px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Estilos exclusivos para cada opção de align-self */
+.auto {
+    align-self: auto; /* Usa a configuração padrão do pai */
+}
+
+.start {
+    align-self: flex-start; /* Alinha no início do contêiner */
+}
+
+.end {
+    align-self: flex-end; /* Alinha no final do contêiner */
+}
+
+.center {
+    align-self: center; /* Alinha no centro do contêiner */
+}
+
+.baseline {
+    align-self: baseline; /* Alinha pela linha de base */
+}
+
+.stretch {
+    align-self: stretch; /* Estica para preencher a altura do contêiner */
+}

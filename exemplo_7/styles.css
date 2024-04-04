@@ -1,0 +1,16 @@
+/* Align content */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    align-content: space-evenly; /* Alinha as linhas de forma semelhante a justify-content */
+    border: 1px solid #333;
+}
+
+.box {
+    flex: 0 0 100px;
+    margin: 10px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+}

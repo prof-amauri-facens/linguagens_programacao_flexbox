@@ -1,0 +1,21 @@
+/* exemplo gap */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #333;
+    /* Ou usar gap ou row e colun gap */
+    /* gap: 50px; Define o espaçamento entre os itens */
+    row-gap: 10px; /* Define o espaçamento entre as linhas */
+    column-gap: 10px; /* Define o espaçamento entre as colunas */
+    padding: 10px; /* Adiciona um espaçamento interno */
+}
+
+.item {
+    flex: 0 0 calc(20% - 20px); /* Define o tamanho dos itens */
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+    padding: 0;
+}
