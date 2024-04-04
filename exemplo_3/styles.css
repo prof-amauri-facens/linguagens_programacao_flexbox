@@ -1,3 +1,5 @@
+/* Exemplo quebas de linha */
+
 .container {
     display: flex;
     flex-wrap: nowrap; /* Impede a quebra de linhas */
